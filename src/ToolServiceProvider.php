@@ -80,7 +80,7 @@ class ToolServiceProvider extends ServiceProvider
             return resolve(NovaRequest::class)->isActivate($meta, $context, $scope);
         });
 
-        Field::macro('isRequestActivateGlobally', function (string $meta {
+        Field::macro('isRequestActivateGlobally', function (string $meta) {
             return resolve(NovaRequest::class)->isActivate($meta);
         });
 
